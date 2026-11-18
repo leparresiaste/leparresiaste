@@ -450,6 +450,15 @@ h1{text-wrap:balance}
 .art .split.rev.shot{align-items:start}
 @media (max-width:720px){.art figure.fig-center{width:85%}}
 .art .body p.question{margin-bottom:.5rem}
+
+/* Onglets : tous sur une seule ligne sur ordinateur */
+@media(min-width:821px){
+  nav ul{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+  nav a{white-space:nowrap;overflow:hidden;text-overflow:clip}
+}
+@media(min-width:821px) and (max-width:1200px){
+  nav a{font-size:.68rem!important;letter-spacing:.03em!important;padding-inline:.25rem!important}
+}
 </style>
 </head>
 <body>
